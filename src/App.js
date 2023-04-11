@@ -1,8 +1,14 @@
 import './App.css';
 import DOT from "./components/Dot.js"
-import background from "./images/trondheim.png"
 import screenshot from "./images/test_2.png"
-import kvadrat from "./images/kvadrat.png"
+
+/** 
+ * jeg hadde ikke jobbet med bakgrunnsbilder før, hentet herifra
+ * https://upmostly.com/tutorials/react-background-image
+ * 
+ * videre tenkte jeg vi kunne se på hover effekter som viste små vinduer
+ * med informasjon for hvordan vi tenkte utforming av Brattørkaia kunne se ut
+*/
 
 function App() {
   return (
