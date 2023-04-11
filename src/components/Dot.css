@@ -1,0 +1,14 @@
+.dot_container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 7.5px 5px 0 0;
+}
