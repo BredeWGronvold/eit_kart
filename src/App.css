@@ -10,19 +10,31 @@ https://www.quackit.com/css/css_color_codes.cfm
   width: 100%;
   font-size: calc(10px + 2vmin);
   display: flex;
+  position: absolute;
 }
 
 /*------- START PLACES ON MAP ----------*/
 .place_container {
+  position: absolute;
   display: flex;
   align-items:end;
   width: 100%;
 }
 
+.place {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
 
 .place_gangbro {
-  margin-bottom: 70px;
-  margin-left: 60px;
+  /* margin-bottom: 70px;
+  margin-left: 60px; */
+  left: 277px;
+  top: 263px;
 }
 
 .place_gangbro:hover {
@@ -31,8 +43,10 @@ https://www.quackit.com/css/css_color_codes.cfm
 }
 
 .place_overgang {
-  margin-bottom: 170px;
-  margin-left: 70px;
+  /* margin-bottom: 170px;
+  margin-left: 70px; */
+  left: 265px;
+  top: 235px;
 }
 
 .place_overgang:hover {
@@ -41,8 +55,10 @@ https://www.quackit.com/css/css_color_codes.cfm
 }
 
 .place_blomstereng {
-  margin-bottom: 300px;
-  margin-left: 70px;
+  /* margin-top: 200px;
+  margin-left: 70px; */
+  left: 275px;
+  top: 200px;
 }
 
 .place_blomstereng:hover {

@@ -1,0 +1,48 @@
+.root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* cover entire */
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+}
+
+.text_field {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    height: 100vh;
+    width: auto;
+    max-width: 50vw;
+    background: lightcyan;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: Roboto, sans-serif; 
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.text {
+    font-family: Roboto, sans-serif;
+}

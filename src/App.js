@@ -1,5 +1,6 @@
 import './App.css';
-import DOT from "./components/Dot.js"
+// import MAP from './components/map/map';
+import DOT from "./components/dot/Dot.js"
 import screenshot from "./images/test_2.png"
 
 /** 
@@ -14,23 +15,24 @@ function App() {
   return (
     <div className="App">
       <div className="background" style={{
-        backgroundImage : `url(${screenshot})`,
+        backgroundImage: `url(${screenshot})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize:"contain",
+        // backgroundSize:"contain",
         }}>
-          <div className='place_container'>
+          {/* <div className='place_container'> */}
 
-            <div className='place_gangbro'>
+            <div className='place place_gangbro'>
               <DOT txt="Gangbro"/>
             </div>
-            <div className='place_overgang'>
+            <div className='place place_overgang'>
               <DOT txt="Overgang"/>
             </div>
-            <div className='place_blomstereng'>
+            <div className='place place_blomstereng'>
               <DOT txt="Blomstereng"/>
             </div>
-          </div>        
+          {/* </div>         */}
       </div>
+
     </div>
   );
 }
