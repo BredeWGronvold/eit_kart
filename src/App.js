@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 // import MAP from './components/map/map';
 import DOT from "./components/dot/Dot.js"
 import BAR from "./components/sidebar/bar.js"
+
 import screenshot from "./images/test_2.png"
-import img_gangbro from "./images/trondheim.png"
+import imgPark from "./images/gardenBridge.jpg"
+import imgUndergang from "./images/MicrosoftTeams-image.png"
+import imgGangbro from "./images/gangbro.jpg"
 
 /** 
  * jeg hadde ikke jobbet med bakgrunnsbilder før, hentet herifra
@@ -15,9 +18,13 @@ import img_gangbro from "./images/trondheim.png"
 */
 
 function App() {
-  let display_test = false
   const [display_gangbro, set_display_gangbro] = useState(false)
-  localStorage.setItem("display", false)
+  const [display_undergang, set_display_undergang] = useState(false)
+  const [display_park, set_display_park] = useState(false)
+
+  function toggleGangbroDisplay() { set_display_gangbro(!display_gangbro) }
+  function toggleUndergangDisplay() { set_display_undergang(!display_undergang) }
+  function toggleParkDisplay() { set_display_park(!display_park) }
 
   return (
     <div className="App">
@@ -26,27 +33,42 @@ function App() {
         backgroundRepeat: "no-repeat",
         // backgroundSize:"contain",
         }}>
-          {/* <div className='place_container'> */}
-          {/* <BAR /> */}
 
-          <div className='place place_gangbro' onClick={() => localStorage.setItem("display", true)}>
-            <DOT txt="Gangbro" />
+          <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
+            <DOT />
           </div>
+          {display_gangbro &&
           <BAR 
               header="Gangbro"
-              img={img_gangbro}
+              img={imgGangbro}
               txt="Lorem ipsum bla bla bla"
-              // display={display}
-              // set_display = {set_display_gangbro}
+              display={toggleGangbroDisplay}
           />
+          }
 
-          <div className='place place_overgang'>
-            <DOT txt="Overgang"/>
+          <div className='place place_undergang' onClick={toggleUndergangDisplay}>
+            <DOT />
           </div>
-          <div className='place place_blomstereng'>
-            <DOT txt="Blomstereng"/>
+          {display_undergang &&
+          <BAR 
+              header="Undergang"
+              img={imgUndergang}
+              txt="Lorem ipsum bla bla bla"
+              display={toggleUndergangDisplay}
+          />
+          }
+
+          <div className='place place_park' onClick={toggleParkDisplay}>
+            <DOT/>
           </div>
-          {/* </div>         */}
+          {display_park &&
+          <BAR 
+              header="Park"
+              img={imgPark}
+              txt="Lorem ipsum bla bla bla"
+              display={toggleParkDisplay}
+          />
+          }
       </div>
 
     </div>

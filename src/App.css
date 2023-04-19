@@ -42,26 +42,26 @@ https://www.quackit.com/css/css_color_codes.cfm
   color: #6F6F6F;
 }
 
-.place_overgang {
+.place_undergang {
   /* margin-bottom: 170px;
   margin-left: 70px; */
   left: 265px;
   top: 235px;
 }
 
-.place_overgang:hover {
+.place_undergang:hover {
   cursor: pointer;
   color: #6F6F6F
 }
 
-.place_blomstereng {
+.place_park {
   /* margin-top: 200px;
   margin-left: 70px; */
   left: 275px;
   top: 200px;
 }
 
-.place_blomstereng:hover {
+.place_park:hover {
   cursor: pointer;
   color: #6F6F6F;
 }
