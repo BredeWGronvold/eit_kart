@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import DOT from "./components/dot/Dot.js"
 import BAR from "./components/sidebar/bar.js"
 
-import screenshot from "./images/test_2.png"
-import imgPark from "./images/gardenBridge.jpg"
-import imgUndergang from "./images/MicrosoftTeams-image.png"
+import screenshot from "./images/avskjert_kart.png"
+import imgPark from "./images/parkCloseup.png"
+import imgUndergang from "./images/undergang.png"
 import imgGangbro from "./images/gangbro.jpg"
 
 /** 
@@ -31,21 +31,8 @@ function App() {
       <div className="background" style={{
         backgroundImage: `url(${screenshot})`,
         backgroundRepeat: "no-repeat",
-        // backgroundSize:"contain",
+        backgroundSize:"contain",
         }}>
-
-          {/* <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
-            
-          </div> */}
-          <DOT display={toggleGangbroDisplay} />
-          {display_gangbro &&
-          <BAR 
-              header="Gangbro"
-              img={imgGangbro}
-              txt="Lorem ipsum bla bla bla"
-              display={toggleGangbroDisplay}
-          />
-          }
 
           {/* <div className='place place_undergang' onClick={toggleUndergangDisplay}>
             
@@ -57,6 +44,20 @@ function App() {
               img={imgUndergang}
               txt="Lorem ipsum bla bla bla"
               display={toggleUndergangDisplay}
+          />
+          }
+
+
+          {/* <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
+            
+          </div> */}
+          <DOT display={toggleGangbroDisplay} />
+          {display_gangbro &&
+          <BAR 
+              header="Gangbro"
+              img={imgGangbro}
+              txt="Lorem ipsum bla bla bla"
+              display={toggleGangbroDisplay}
           />
           }
 

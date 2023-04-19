@@ -17,6 +17,10 @@
     /* margin: 7.5px 5px 0 0; */
 }
 
+.dot_container:hover {
+    cursor: pointer;
+  }
+
 .dot_txt {
     font-family: Roboto, 'Open Sans', sans-serif;
     font-size: 10px;
