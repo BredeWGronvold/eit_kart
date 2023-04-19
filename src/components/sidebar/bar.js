@@ -3,7 +3,7 @@ import './bar.css'
 function Bar(props){
     return(
         <div className='root'>
-            <div className='fade'></div>
+            <div className='fade' onClick={props.display}></div>
             <div className='bar'>
                 <div className='text_field'>
                     <h1 className='heading'>{props.header}</h1>
