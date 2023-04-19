@@ -34,9 +34,10 @@ function App() {
         // backgroundSize:"contain",
         }}>
 
-          <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
-            <DOT />
-          </div>
+          {/* <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
+            
+          </div> */}
+          <DOT display={toggleGangbroDisplay} />
           {display_gangbro &&
           <BAR 
               header="Gangbro"
@@ -46,9 +47,10 @@ function App() {
           />
           }
 
-          <div className='place place_undergang' onClick={toggleUndergangDisplay}>
-            <DOT />
-          </div>
+          {/* <div className='place place_undergang' onClick={toggleUndergangDisplay}>
+            
+          </div> */}
+          <DOT display={toggleUndergangDisplay} />
           {display_undergang &&
           <BAR 
               header="Undergang"
@@ -58,9 +60,10 @@ function App() {
           />
           }
 
-          <div className='place place_park' onClick={toggleParkDisplay}>
-            <DOT/>
-          </div>
+          {/* <div className='place place_park' onClick={toggleParkDisplay}>
+            >
+          </div> */}
+          <DOT display={toggleParkDisplay} />
           {display_park &&
           <BAR 
               header="Park"
