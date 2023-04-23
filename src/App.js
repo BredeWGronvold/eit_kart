@@ -37,42 +37,49 @@ function App() {
           {/* <div className='place place_undergang' onClick={toggleUndergangDisplay}>
             
           </div> */}
-          <DOT display={toggleUndergangDisplay} />
-          {display_undergang &&
-          <BAR 
-              header="Undergang"
-              img={imgUndergang}
-              txt="Lorem ipsum bla bla bla"
-              display={toggleUndergangDisplay}
-          />
-          }
-
-
+          <div className='dot_container_app'>
+            <div className='dot_undergang'>
+              <DOT display={toggleUndergangDisplay} />
+                {display_undergang &&
+                <BAR 
+                    header="Undergang"
+                    img={imgUndergang}
+                    txt="Lorem ipsum bla bla bla"
+                    display={toggleUndergangDisplay}
+                />
+                }    
+            </div>
+          
           {/* <div className='place place_gangbro' onClick={toggleGangbroDisplay}>
             
           </div> */}
-          <DOT display={toggleGangbroDisplay} />
-          {display_gangbro &&
-          <BAR 
-              header="Gangbro"
-              img={imgGangbro}
-              txt="Lorem ipsum bla bla bla"
-              display={toggleGangbroDisplay}
-          />
-          }
+          <div className='dot_gangbro'>
+            <DOT display={toggleGangbroDisplay} />
+            {display_gangbro &&
+            <BAR 
+                header="Gangbro"
+                img={imgGangbro}
+                txt="Lorem ipsum bla bla bla"
+                display={toggleGangbroDisplay}
+            />
+            }
+          </div>
 
           {/* <div className='place place_park' onClick={toggleParkDisplay}>
             >
           </div> */}
-          <DOT display={toggleParkDisplay} />
-          {display_park &&
-          <BAR 
-              header="Park"
-              img={imgPark}
-              txt="Lorem ipsum bla bla bla"
-              display={toggleParkDisplay}
-          />
-          }
+          <div className='dot_park'>
+            <DOT display={toggleParkDisplay} />
+            {display_park &&
+            <BAR 
+                header="Park"
+                img={imgPark}
+                txt="Lorem ipsum bla bla bla"
+                display={toggleParkDisplay}
+            />
+            }
+          </div>
+        </div>
       </div>
 
     </div>
