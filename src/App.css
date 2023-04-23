@@ -67,21 +67,16 @@ https://www.quackit.com/css/css_color_codes.cfm
 }
 
 /* i prosent, usikker på hva som blir best
-.place_gangbro {
-  margin-bottom: 5%;
-  margin-left: 3%;
-}
+dot_undergang i prosent:
+  margin-bottom: 16%;
+  margin-left: 7.7%;
 
+dot_gangbro i prosent:
+  margin-bottom: 12.5%;
+  margin-left: 38%;
 
-.place_overgang {
-  margin-bottom: 13%;
-  margin-left: 7%;
-}
-
-.place_blomstereng {
-  margin-bottom: 25%;
-  margin-left: 7%;
-}
+dot_park i prosent:
+  margin-bottom: 22%;
 */
 
 /*------- END PLACES ON MAP ----------*/
