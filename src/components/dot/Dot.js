@@ -3,14 +3,15 @@ import './Dot.css'
 
 function Dot(props){
     return(
-        // <svg viewBox="0 0 100 100" height="200px" width="200px" version="1.1">
-        //     <polygon points="50, 160, 55, 180, 70, 180, 60, 190, 65, 205, 50, 195, 35, 205, 40, 190, 30, 180, 45, 180" stroke="green" fill="red" stroke-width="5"/>
-        // </svg>
-        <canvas className='dot_container' onClick={props.display}>
-            <div className='dot'>
-
-            </div>
-        </canvas>
+        <svg className='dot_container' id={props.id} onClick={props.display}>
+            <clipPath id="path" clipPathUnits="objectBoundingBox">
+                <path d="M0.5,1
+                C 0.5,1,0,0.7,0,0.3
+                A 0.25,0.25,1,1,1,0.5,0.3
+                A 0.25,0.25,1,1,1,1,0.3
+                C 1,0.7,0.5,1,0.5,1 Z" />
+            </clipPath>
+        </svg>
     );
 }
 

@@ -1,28 +1,29 @@
 .dot_container {
-    display: flex;
-    /* align-items: center; */
-    /* margin-left: 10px; */
-    height: 10px;
-    width: 10px;
-    background-color: red;
-    border-radius: 50%;
-}
-
-.dot{
-    height: 6px;
-    width: 6px;
-    background-color: red;
-    border-radius: 50%;
-    /* display: inline-block; */
-    /* margin: 7.5px 5px 0 0; */
+    display: flex; 
+    align-items: center;
+    /* background: rgba(255, 0, 255, .5); */
+    transition: .3s;
 }
 
 .dot_container:hover {
+    background-color: rgba(255,255,255,.4);
     cursor: pointer;
   }
 
-.dot_txt {
+/* .dot_txt {
     font-family: Roboto, 'Open Sans', sans-serif;
     font-size: 10px;
     color: white;
+} */
+
+#undergang {
+    clip-path: polygon(10% 0, 0 50%, 11% 75%, 25% 87%, 73% 95%, 66% 0%, 40% 20%)
+}
+
+#gangbro {
+    clip-path: polygon(5% 0, 22% 30%, 20% 100%, 25% 100%, 30% 20%, 15% 0);
+}
+
+#park {
+    clip-path: polygon(0 20%, 25% 100%, 100% 80%, 90% -10%);
 }
