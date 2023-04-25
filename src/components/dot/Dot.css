@@ -3,6 +3,8 @@
     align-items: center;
     /* background: rgba(255, 0, 255, .5); */
     transition: .3s;
+    width: 20vw;
+    height: 20vh;
 }
 
 .dot_container:hover {
