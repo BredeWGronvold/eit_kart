@@ -7,7 +7,7 @@ import BAR from "./components/sidebar/bar.js"
 import screenshot from "./images/avskjert_kart.png"
 import imgPark from "./images/parkCloseup.png"
 import imgUndergang from "./images/undergang.png"
-import imgGangbro from "./images/gangbro.jpg"
+import imgGangbro from "./images/skanen_undergang.png"
 
 /** 
  * jeg hadde ikke jobbet med bakgrunnsbilder før, hentet herifra
